@@ -9,7 +9,12 @@ if exists('g:autoloaded_undotree')
     finish
 endif
 let g:autoloaded_undotree = 0
+let g:undotree_DiffAutoOpen = 1
 let g:undotree_SetFocusWhenToggle = 1
+let g:undotree_ShortIndicators = 1
+let g:undotree_WindowLayout = 2
+let g:undotree_DiffpanelHeight = 8
+let g:undotree_SplitWidth = 24
 
 " At least version 7.3 with 005 patch is needed for undo branches.
 " Refer to https://github.com/mbbill/undotree/issues/4 for details.
