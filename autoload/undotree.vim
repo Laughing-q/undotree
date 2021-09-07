@@ -71,10 +71,12 @@ endif
 "You can define whatever mapping as you like, this is a hook function which
 "will be called after undotree window initialized.
 "
-"function g:Undotree_CustomMap()
-"    map <buffer> <c-n> J
-"    map <buffer> <c-p> K
-"endfunction
+function g:Undotree_CustomMap()
+	nmap <buffer> i <plug>UndotreeNextState
+	nmap <buffer> k <plug>UndotreePreviousState
+	nmap <buffer> I 5<plug>UndotreeNextState
+	nmap <buffer> K 5<plug>UndotreePreviousState
+endfunction
 
 " Keymap
 let s:keymap = []
